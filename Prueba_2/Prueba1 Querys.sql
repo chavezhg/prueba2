@@ -109,6 +109,101 @@ INSERT [dbo].[empleados] ([userId], [Sueldo], [FechaIngreso]) VALUES (46, CAST(8
 GO
 
 
+-- Creación de SP's
+
+/****** Object:  StoredProcedure [dbo].[Usuarios_GetAll]    Script Date: 29/07/2022 01:05:34 a. m. ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:      <Author, , Name>
+-- Create Date: <Create Date, , >
+-- Description: <Description, , >
+-- =============================================
+CREATE PROCEDURE [dbo].[Usuarios_GetAll]
+AS
+BEGIN
+    -- SET NOCOUNT ON added to prevent extra result sets from
+    -- interfering with SELECT statements.
+    SET NOCOUNT ON
+
+    SELECT * FROM usuarios
+	INNER JOIN empleados ON empleados.userId = usuarios.userId
+
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Usuarios_Insert]    Script Date: 29/07/2022 01:05:50 a. m. ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:      <Author, , Name>
+-- Create Date: <Create Date, , >
+-- Description: <Description, , >
+-- =============================================
+CREATE PROCEDURE [dbo].[Usuarios_Insert]
+(
+    @Login VARCHAR(100),
+	@Nombre VARCHAR(100),
+	@Paterno VARCHAR(100),
+	@Materno VARCHAR(100),
+	@Sueldo DECIMAL(10,2)
+)
+AS
+BEGIN
+
+	INSERT INTO usuarios(Login, Nombre, Paterno, Materno) VALUES(@Login, @Nombre, @Paterno, @Materno);
+
+	INSERT INTO empleados(userId, Sueldo, FechaIngreso) VALUES(@@IDENTITY, @Sueldo, GETDATE());
+
+	SELECT CAST(1 AS BIT) AS 'Success', 'El usuario se insertó correctamente' AS 'Message', @@IDENTITY AS 'Data';
+
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Usuarios_UpdateSalary]    Script Date: 29/07/2022 01:06:04 a. m. ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:      <Author, , Name>
+-- Create Date: <Create Date, , >
+-- Description: <Description, , >
+-- =============================================
+CREATE PROCEDURE [dbo].[Usuarios_UpdateSalary]
+(
+    @userId INT,
+	@Sueldo DECIMAL(10,2)
+)
+AS
+BEGIN
+	IF(SELECT COUNT(userId) FROM empleados WHERE userId = @userId) > 0
+	BEGIN
+
+		UPDATE empleados SET Sueldo = @Sueldo WHERE userId = @userId;
+
+		SELECT CAST(1 AS BIT) AS 'Success', 'El salario se actualizó correctamente' AS 'Message', @@IDENTITY AS 'Data';
+	END
+	ELSE
+	BEGIN
+		SELECT CAST(1 AS BIT) AS 'Success', 'Ese registro no existe' AS 'Message';
+	END
+END
+GO
+
+
+
+
 -- Sentencias SQL PRUEBA 1
 
 
