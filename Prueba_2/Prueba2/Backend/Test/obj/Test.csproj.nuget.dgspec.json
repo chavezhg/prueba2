@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Ricardo\\Documents\\Proyectos\\.NET\\Prueba2\\Backend\\Test\\Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ricardo\\Documents\\Proyectos\\.NET\\Prueba2\\Backend\\Prueba2.Backend\\Prueba2.Backend.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ricardo\\Documents\\Proyectos\\.NET\\Prueba2\\Backend\\Prueba2.Backend\\Prueba2.Backend.csproj",
+        "projectName": "Prueba2.Backend",
+        "projectPath": "C:\\Users\\Ricardo\\Documents\\Proyectos\\.NET\\Prueba2\\Backend\\Prueba2.Backend\\Prueba2.Backend.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Ricardo\\Documents\\Proyectos\\.NET\\Prueba2\\Backend\\Test\\Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ricardo\\Documents\\Proyectos\\.NET\\Prueba2\\Backend\\Test\\Test.csproj",
+        "projectName": "Test",
+        "projectPath": "C:\\Users\\Ricardo\\Documents\\Proyectos\\.NET\\Prueba2\\Backend\\Test\\Test.csproj",
+        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ricardo\\Documents\\Proyectos\\.NET\\Prueba2\\Backend\\Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Ricardo\\Documents\\Proyectos\\.NET\\Prueba2\\Backend\\Prueba2.Backend\\Prueba2.Backend.csproj": {
+                "projectPath": "C:\\Users\\Ricardo\\Documents\\Proyectos\\.NET\\Prueba2\\Backend\\Prueba2.Backend\\Prueba2.Backend.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

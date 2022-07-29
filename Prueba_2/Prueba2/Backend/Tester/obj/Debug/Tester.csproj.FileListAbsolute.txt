@@ -1,0 +1,10 @@
+C:\Users\Ricardo\Documents\Proyectos\.NET\Prueba2\Backend\Tester\bin\Debug\Tester.exe.config
+C:\Users\Ricardo\Documents\Proyectos\.NET\Prueba2\Backend\Tester\bin\Debug\Tester.exe
+C:\Users\Ricardo\Documents\Proyectos\.NET\Prueba2\Backend\Tester\bin\Debug\Tester.pdb
+C:\Users\Ricardo\Documents\Proyectos\.NET\Prueba2\Backend\Tester\bin\Debug\Prueba2.Backend.dll
+C:\Users\Ricardo\Documents\Proyectos\.NET\Prueba2\Backend\Tester\bin\Debug\Prueba2.Backend.pdb
+C:\Users\Ricardo\Documents\Proyectos\.NET\Prueba2\Backend\Tester\obj\Debug\Tester.csproj.AssemblyReference.cache
+C:\Users\Ricardo\Documents\Proyectos\.NET\Prueba2\Backend\Tester\obj\Debug\Tester.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo\Documents\Proyectos\.NET\Prueba2\Backend\Tester\obj\Debug\Tester.csproj.CopyComplete
+C:\Users\Ricardo\Documents\Proyectos\.NET\Prueba2\Backend\Tester\obj\Debug\Tester.exe
+C:\Users\Ricardo\Documents\Proyectos\.NET\Prueba2\Backend\Tester\obj\Debug\Tester.pdb

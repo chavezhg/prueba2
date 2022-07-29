@@ -1,0 +1,5 @@
+C:\Users\Ricardo\Documents\Proyectos\.NET\Prueba2\Backend\Prueba2.Backend\bin\Release\Prueba2.Backend.dll
+C:\Users\Ricardo\Documents\Proyectos\.NET\Prueba2\Backend\Prueba2.Backend\bin\Release\Prueba2.Backend.pdb
+C:\Users\Ricardo\Documents\Proyectos\.NET\Prueba2\Backend\Prueba2.Backend\obj\Release\Prueba2.Backend.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo\Documents\Proyectos\.NET\Prueba2\Backend\Prueba2.Backend\obj\Release\Prueba2.Backend.dll
+C:\Users\Ricardo\Documents\Proyectos\.NET\Prueba2\Backend\Prueba2.Backend\obj\Release\Prueba2.Backend.pdb
