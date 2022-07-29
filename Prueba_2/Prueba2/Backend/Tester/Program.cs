@@ -19,7 +19,8 @@ namespace Tester
                 Console.WriteLine("Ingresa la opción deseada: ");
                 Console.WriteLine("1. Actualizar salario de un empleado");
                 Console.WriteLine("2. Agregar nuevo usuario");
-                Console.WriteLine("3. Salir\n");
+                Console.WriteLine("3. Obtener CSV");
+                Console.WriteLine("4. Salir\n");
                 int res = 0;
                 try
                 {
@@ -66,6 +67,21 @@ namespace Tester
                         }
                         break;
                     case 3:
+                        Console.WriteLine("Ingresa una ruta para guardar el archivo o en su defecto se guardará en el disco local C");
+                        string fileName = Console.ReadLine();
+                        try
+                        {
+                            if (fileName == "")
+                                UsuariosManager.GetCsv(@"C:\test.csv");
+                            else
+                                UsuariosManager.GetCsv(fileName);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Ocurrió un error al descargar el archivo " + e.StackTrace);
+                        }
+                        break;
+                    case 4:
                         Continuar = false;
                         break;
                 }
